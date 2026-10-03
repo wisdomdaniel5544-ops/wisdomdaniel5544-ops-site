@@ -1,0 +1,9 @@
+{
+  "name": "clonekit-ai",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "build": "rm -rf dist && mkdir -p dist && cp index.html styles.css script.js server.mjs package.json video-frame.jpg logo.svg dist/ && cp -r public dist/public"
+  }
+}
