@@ -1,5 +1,4 @@
-// Replace this one value with the real Telegram group URL before publishing.
-const TELEGRAM_URL = "https://t.me/your_group_here";
+const TELEGRAM_URL = "https://t.me/AIHUSTLERSUNIVERSITY";
 
 document.querySelectorAll(".telegram-link").forEach((link) => {
   link.href = TELEGRAM_URL;
@@ -14,7 +13,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.12 });
 
-document.querySelectorAll(".benefit-card, .step-row, .faq-list, .final-cta-inner").forEach((element) => {
+document.querySelectorAll(".proof-item, .drop-card, .step-row, .simple-final .final-cta-inner").forEach((element) => {
   element.classList.add("scroll-reveal");
   observer.observe(element);
 });

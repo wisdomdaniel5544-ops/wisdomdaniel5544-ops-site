@@ -244,3 +244,52 @@ details p { max-width: 620px; color: var(--muted); font-size: 13px; line-height:
 
 .scroll-reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s cubic-bezier(.2,.7,.2,1); }
 .scroll-reveal.is-visible { opacity: 1; transform: translateY(0); }
+
+/* Simple funnel refresh: brighter contrast, fewer distractions, faster scanning. */
+.simple-page { background: radial-gradient(circle at 72% 7%, rgba(27,115,255,.18), transparent 31%), #070b14; }
+.simple-page .ambient-one { background: #1d69ff; opacity: .25; filter: blur(75px); }
+.simple-page .ambient-two { background: #bdff35; opacity: .07; }
+.simple-page .announcement { background: rgba(7,11,20,.9); }
+.simple-page .signal-dot { background: #dfff4f; box-shadow: 0 0 0 4px rgba(223,255,79,.12), 0 0 16px rgba(223,255,79,.55); }
+.simple-page .wordmark-accent, .simple-page .eyebrow, .simple-page .section-kicker, .simple-page .media-index { color: #6eb5ff; }
+.simple-page .hero { padding-top: 72px; padding-bottom: 65px; }
+.simple-page h1 { font-size: clamp(55px, 7.2vw, 101px); }
+.simple-page h1 em { color: #dfff4f; text-shadow: 0 0 28px rgba(223,255,79,.13); }
+.simple-page .hero-lead { max-width: 460px; font-size: 16px; color: #bdc9d8; }
+.simple-page .button-primary { color: #07101d; background: linear-gradient(100deg, #dfff4f 0%, #a9f93d 100%); box-shadow: 0 11px 34px rgba(191,255,60,.2), 0 0 0 1px rgba(255,255,255,.08) inset; }
+.simple-page .button-primary:hover { background: #efff85; box-shadow: 0 14px 42px rgba(191,255,60,.3); }
+.simple-page .video-shell { border-color: rgba(110,181,255,.46); box-shadow: 17px 20px 0 rgba(27,115,255,.18), 0 30px 70px rgba(0,0,0,.45); }
+.simple-page .video-shell::before, .simple-page .video-shell::after { border-color: #dfff4f; }
+.simple-page .video-glow { background: rgba(28,126,255,.42); }
+.simple-page .simple-proof { margin-bottom: 10px; }
+.simple-page .simple-inside { padding-top: 72px; }
+.simple-page .inside-panel { background: linear-gradient(125deg, #0e3f9f 0%, #0b224f 48%, #0a111d 100%); border-color: rgba(110,181,255,.44); }
+.simple-page .inside-copy h2 span, .simple-page .final-copy h2 span { color: #dfff4f; }
+.simple-page .drop-card { box-shadow: 18px 18px 0 rgba(223,255,79,.13); background: #f4f7fb; color: #0d1521; }
+.simple-page .drop-card-title, .simple-page .drop-card strong, .simple-page .drop-list strong { color: #0d1521; }
+.simple-page .drop-card-title strong { color: #155ee8; }
+.simple-page .drop-list small, .simple-page .drop-card-top, .simple-page .drop-card-foot { color: #667181; }
+.simple-page .simple-steps { padding-top: 32px; }
+.simple-page .simple-steps > h2 { margin-top: 24px; }
+.simple-page .step-row { padding: 23px 0; }
+.simple-page .step-main h3 { font-size: 20px; }
+.simple-page .step-main p { color: #a8b4c4; }
+.simple-page .simple-final { padding-top: 10px; }
+.simple-page .final-cta-inner { background: linear-gradient(115deg, #2d83ff 0%, #1966dc 55%, #1151ba 100%); box-shadow: 0 18px 48px rgba(19,93,220,.18); }
+.simple-page .final-copy h2 { color: #06111f; }
+.simple-page .mobile-cta a { background: linear-gradient(100deg, #dfff4f, #b4fb42); }
+.simple-page, .simple-page main, .simple-page header, .simple-page footer { color: #f4f7fb; }
+.simple-page h1, .simple-page h2, .simple-page h3, .simple-page .wordmark, .simple-page .header-link, .simple-page .proof-item strong, .simple-page .step-main h3, .simple-page .hero-note, .simple-page .footer-brand { color: #f4f7fb; }
+.simple-page .hero-lead, .simple-page .inside-copy p, .simple-page .step-main p, .simple-page .site-footer p { color: #c7d1df; }
+.simple-page .final-copy h2 { color: #06111f; }
+@media (max-width: 620px) {
+  .simple-page .hero { padding-top: 50px; padding-bottom: 48px; }
+  .simple-page h1 { font-size: clamp(50px, 15vw, 78px); }
+  .simple-page .hero-lead { font-size: 15px; }
+  .simple-page .simple-inside { padding-top: 70px; }
+  .simple-page .inside-panel { padding: 36px 22px; gap: 38px; }
+  .simple-page .inside-copy h2 { font-size: 43px; }
+  .simple-page .simple-steps { padding-top: 0; }
+  .simple-page .simple-steps > h2 { font-size: 44px; }
+  .simple-page .simple-final { padding-bottom: 76px; }
+}
